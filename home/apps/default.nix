@@ -1,7 +1,9 @@
 { pkgs,  config, inputs, ...}:
 {
 	imports = [
-	./discord
+	./discord.nix
+	./spotify.nix
+	./zen.nix
 	];
 
 }

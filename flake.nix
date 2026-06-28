@@ -12,13 +12,21 @@
 				url = "github:noctalia-dev/noctalia";
 				inputs.nixpkgs.follows = "nixpkgs";
 			};
+			zen-browser = {
+				url = "github:youwen5/zen-browser-flake";
+				inputs.nixpkgs.follows = "nixpkgs";
+			};
 			home-manager = {
 				url = "github:nix-community/home-manager/release-26.05";
 				inputs.nixpkgs.follows = "nixpkgs";
 			};
+			spicetify-nix = {
+				url = "github:Gerg-L/spicetify-nix";
+				inputs.nixpkgs.follows = "nixpkgs";
+			};
 	};
 
-	outputs = {self, nixpkgs, home-manager, ...}@inputs: {
+	outputs = {self, nixpkgs, home-manager, zen-browser, ...}@inputs: {
 		nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
 			specialArgs = { inherit inputs; };
 			modules = [

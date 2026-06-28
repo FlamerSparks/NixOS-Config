@@ -13,7 +13,7 @@
 		homeDirectory= "/home/william";
 		stateVersion = "26.05";
 	};
-
+	
 	programs.home-manager.enable = true;
 	programs.kitty.enable = true;
 	programs.btop.enable = true;
