@@ -2,6 +2,7 @@
 {
 	imports = [
 		./niri
+		./apps
 		inputs.noctalia.homeModules.default
 		inputs.niri.homeModules.niri
 	];

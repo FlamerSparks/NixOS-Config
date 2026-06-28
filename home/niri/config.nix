@@ -6,10 +6,6 @@
 			settings = {
 				spawn-at-startup = [ {command = ["noctalia"];}
 				];
-				binds = {
-				  "Mod+Return".action.spawn = "kitty";
-				  "Mod+Print".action.screenshot = {show-pointer =true;};
-				};
 			};
 	};
 }
