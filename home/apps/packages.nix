@@ -10,6 +10,8 @@
 			qbittorrent
 			hydralauncher
 			yazi
+			blender
+			steam
 		];
 	};
 }
