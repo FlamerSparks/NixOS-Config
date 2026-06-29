@@ -38,7 +38,7 @@
           action = toggle-overview;
           repeat = false;
         };
- 	"${mod}+space".action.spawn = "noctalia msg panel-toggle launcher";
+ 	"${mod}+space".action= spawn-sh "noctalia msg panel-toggle launcher";
         "${mod}+Shift+Q".action = close-window;
         "${mod}+Left".action = focus-column-left;
         "${mod}+Down".action = focus-window-down;

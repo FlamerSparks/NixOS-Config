@@ -3,7 +3,7 @@
 	imports = [
 	./discord.nix
 	./spotify.nix
-	./zen.nix
+	./packages.nix
 	];
 
 }

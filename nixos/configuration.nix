@@ -104,6 +104,7 @@
   environment.systemPackages = with pkgs; [
 	git
      vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+	xwayland-satellite
   #  wget
   ];
 
@@ -117,8 +118,8 @@
   #   enable = true;
   #   enableSSHSupport = true;
   # };
-
   # List services that you want to enable:
+	
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
