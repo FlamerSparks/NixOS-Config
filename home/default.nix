@@ -3,7 +3,8 @@
 	imports = [
 		./niri
 		./apps
-		inputs.noctalia.homeModules.default
+		./noctalia
+		./text-editors
 		inputs.niri.homeModules.niri
 	];
 
@@ -17,11 +18,6 @@
 	programs.home-manager.enable = true;
 	programs.kitty.enable = true;
 	programs.btop.enable = true;
-	programs.noctalia = {
-		enable = true;
-			settings = {
-			};
-	};
 	programs.git = {
 		enable = true;
 		userName = "FlamerSparks";

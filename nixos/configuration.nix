@@ -106,6 +106,7 @@
 	git
      vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
 	xwayland-satellite
+	ntfs3g
   #  wget
   ];
 
@@ -125,6 +126,13 @@
 	enable = true;
 	powerOnBoot = true;
   };
+
+  #Nvidia Settings
+  hardware.graphics.enable = true;
+  services.xserver.videoDrivers = [ "nvidia" ];
+  hardware.nvidia.modesetting.enable = true;
+  hardware.nvidia.open = false;
+  hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.stable; # Default
 	
 
   # Enable the OpenSSH daemon.
